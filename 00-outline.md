@@ -6,8 +6,8 @@
 4. Javascript.
 5. Javascript II y AJAX.
 6. Node.js y Express: Javascript en el servidor.
-7. MongoDB: Bases de datos con.
-8. React
+7. MongoDB: Bases de datos.
+8. React.
 9. React y Redux.
 10. React Native.
 11. Proyecto práctico: API RESTful con Express.
