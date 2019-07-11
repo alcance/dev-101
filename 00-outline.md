@@ -1,15 +1,14 @@
 #Indice
-
-I. Algoritmos: Preparando terreno.
-II. HTML5 y CSS3: Tu aplicación es un robot.
-III. SASS: Preprocesadores de hojas de estilo.
-IV. Javascript.
-V. Javascript II y AJAX.
-VI. Javascript en el servidor: Node.js y Express.
-VII. MongoDB: Bases de datos con.
-VIII. React
-IX. React y Redux.
-X. React Native.
-
-XI. Proyecto práctico: API RESTful con Express.
-XII. Proyecto práctico: Conecta el frontend.
+---
+1. Algoritmos: Preparando terreno.
+2. HTML5 y CSS3: Tu aplicación es un robot.
+3. SASS: Preprocesadores de hojas de estilo.
+4. Javascript.
+5. Javascript II y AJAX.
+6. Javascript en el servidor: Node.js y Express.
+7. MongoDB: Bases de datos con.
+8. React
+9. React y Redux.
+10. React Native.
+11. Proyecto práctico: API RESTful con Express.
+12. Proyecto práctico: Conecta el frontend.
