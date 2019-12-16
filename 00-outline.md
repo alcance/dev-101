@@ -1,4 +1,4 @@
-#Indice
+# Indice
 ---
 * Algoritmos: Preparando terreno.
 * Configuración de entorno de desarrollo.
