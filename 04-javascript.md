@@ -1,5 +1,4 @@
 # Javascript
----
 
 Existe una serie de conceptos fundamentales en todos los lenguajes de programación. Es importante que comprendas estos conceptos, ya que te ayudarán a entender que sucede al momento de ejecutar tu código.
 
@@ -11,21 +10,21 @@ Javascript no está excento de ellos, por lo que ántes de trabajar con tu códi
 
 En esta primera parte vas a comprender tres conceptos:
 
-- Analizador de Sintaxis (Syntax Parsers).
-- Ámbito Léxico (Lexical Enviroment).
-- Contexto de Ejecución (Execution Context).
-
+* Analizador de Sintaxis \(Syntax Parsers\).
+* Ámbito Léxico \(Lexical Enviroment\).
+* Contexto de Ejecución \(Execution Context\).
 
 ## Sintáxis
+
 > La sintáxis de un lenguaje de programación describe las combinaciones posibles de los símbolos que forman un programa.
 
 ```javascript
-	[1,5,5].sort(function(){return (4*Math.random()>2)?1:-1});
+    [1,5,5].sort(function(){return (4*Math.random()>2)?1:-1});
 ```
 
+## Analizador de Sintaxis \(Syntax Parser\)
 
-## Analizador de Sintaxis (Syntax Parser)
-Es un programa que se encarga de leer tu código y determina si su  **sintaxis** es correcta.
+Es un programa que se encarga de leer tu código y determina si su **sintaxis** es correcta.
 
 El proceso del **syntax parser** es el siguiente:
 
@@ -39,7 +38,7 @@ A grandes rasgos, el código que escribes en Javascript, contiene una **sintaxis
 
 Dentro de este proceso se encuentra al analizador de sintaxis. Su trabajo es recorrer caracter por caracter tu código. Él sabe todas las reglas, si debe de existe un espacio o no después de un caracter y posteriormente lo traduce al sistema.
 
-## Ámbito Léxico (Lexical Enviroment)
+## Ámbito Léxico \(Lexical Enviroment\)
 
 La palabra léxico tiene que ver con palabras o gramatica. Habla del codigo que escribes, su sintaxis, vocabulario.
 
@@ -72,43 +71,37 @@ Es fisicamente el codigo que escribes, es donde se posiciona.
 
 El codigo no se entregad direcmqtne a l computadora, si no se que se traduce a algo que la comptuadra deba entenret.
 
-
 Te da una idea de en que parte de la memoria se encuentra la parte del codigo que escribes.
 
 Es importante saber donde pones las cosas.
 
 Lexical enviromente, donde se escribe y que es lo que lo rodea.
 
+## Contexto de Ejecución \(Execution Context\)
 
-## Contexto de Ejecución (Execution Context)
 Un wrapper que ayuda a administrar el codigo que se esta corriendo.
 
 Hay muchos lexical enviroments. Pero el que este corriendo en ese momento se llama Contxto de ejecucion el que contiene el codigo que corre.
 
 Pero tambien puede contener cosas mas alla de lo que escribiste en tu codigo.
 
-Ya que tu codigo es procesado
-Ejecuta tu codigo y puede hacer otras cosas a su alreddor.
+Ya que tu codigo es procesado Ejecuta tu codigo y puede hacer otras cosas a su alreddor.
 
 Lexical enviroments, execution context, syntax parsers
 
 El contexto de ejecucion global es accesible desde cualquier parte del cdogio
 
-El motor de Javascript crea
-Un objeto global: **Window** en el navegador y **Process** en NodeJs.
-Una variable especial llamda `this`
-	Verifica en tu consola de desarrollo que sin Javascript el motor crea un Windows y this los cuales son globales.
-Un link a el outer enviroment
-	- Si tu codigo esta corirendo una funcion, tiene un enlace al outer env
+El motor de Javascript crea Un objeto global: **Window** en el navegador y **Process** en NodeJs. Una variable especial llamda `this` Verifica en tu consola de desarrollo que sin Javascript el motor crea un Windows y this los cuales son globales. Un link a el outer enviroment
 
+* Si tu codigo esta corirendo una funcion, tiene un enlace al outer env
 
-![Execution Context](ExecutionContext.png)
-
+![Execution Context](https://github.com/alcance/dev-101/tree/c81c34a3ad75b419f931d3ac0ae768cc6621f69a/ExecutionContext.png)
 
 ## Proximos conceptos
-- Encadenamiento y Hoisting
-- Invocación de funciones y stacks de ejecucion
-- Scope
 
+* Encadenamiento y Hoisting
+* Invocación de funciones y stacks de ejecucion
+* Scope
 
 Es importante para comprender que pasa por debajo de Javascript
+

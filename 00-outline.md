@@ -1,17 +1,16 @@
 # Indice
----
-1. Estructura de datos y algoritmos.
-    * Programación orientada a objetos.
-    * Pilas y colas.
-    * Recursividad.
-    * Big-O
-    * Ordenamiento.
-    * Arboles binarios.
-    * Representación de grafos
-    * Búsqueda en profundiad.
-    * Búsqueda en anchura
-    * Tablas hash.
 
+1. Estructura de datos y algoritmos.
+   * Programación orientada a objetos.
+   * Pilas y colas.
+   * Recursividad.
+   * Big-O
+   * Ordenamiento.
+   * Arboles binarios.
+   * Representación de grafos
+   * Búsqueda en profundiad.
+   * Búsqueda en anchura
+   * Tablas hash.
 2. Configuración de entorno de desarrollo.
 3. HTML5 y CSS3: Tu aplicación es un robot.
 4. SASS: Preprocesadores de hojas de estilo.
@@ -26,3 +25,4 @@
 13. React Native.
 14. Proyecto práctico: API RESTful con Express.
 15. Proyecto práctico: Conecta el frontend.
+
