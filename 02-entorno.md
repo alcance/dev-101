@@ -16,4 +16,4 @@ Entorno de desarrollo
 
 ## NPM
 
-## React
+## Nodemon
