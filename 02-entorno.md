@@ -4,11 +4,9 @@ Entorno de desarrollo
 
 ## Visual Studio Code
 
-## Terminal
+## iTerm
 
 ## Oh My Zsh!
-
-## Troubleshoting
 
 ## Docker
 
