@@ -19,7 +19,10 @@ Proceso computacional bien definido:
 
 ## Problema de ordenamiento (sorting)
 
-A = [5,2,10,85,6] = [2,5,6,10,85]
+```js
+A = [5, 2, 10, 85, 6];
+A = [2, 5, 6, 10, 85];
+```
 
 ## Diferentes tipos de algortimos de ordenamiento
 
