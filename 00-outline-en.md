@@ -1,16 +1,16 @@
-# Preparación Técnica para Entrevistas de Software.
+# Tech prep for software interview process.
 
-## Objetivo
+## Objective
 
 Get ready for a technical interview process and get a job in the software indistry.
 
 Fundamentsl.
 
-## Tiempo
+## Estimated Time
 
 3-5 weeks
 
-## Ojo
+## Note
 
 We are not going to go deep in every topic. This is a fundamental overview of tools and languages.
 
