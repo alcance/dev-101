@@ -3,6 +3,7 @@
 * [README](README.md)
 * [Guía de contribución](contribucion.md)
 * [Indice](00-outline.md)
+* [Summary](00-outline-en.md)
 * [Entorno de desarrollo](02-entorno.md)
 * [Algoritmos](01-algoritmos.md)
 * [HTML y CSS](03-html-css.md)
