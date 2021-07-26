@@ -100,6 +100,41 @@ Al igual que en `xml`, si una etiqueta no tiene hijos, puede **autocerrarse**, p
 
 ## Componentes
 
+En palabras simpres, un componente es una parte de tu aplicación independiente y reutilizable. 
+
+### ¿Por qué usar componentes?
+
+Imaginemos una página web muy básica, en la que tienes una barra de navegación, esta contiene un menu que lleva a los usuarios a navegar por todo tu sitio web (Inicio, Sobre nosotros, Contacto, etc). 
+
+Inicias escribiendo tu código para la página de home, escribes un encabezado, todo el contenido para darle la bienvenida al usuario y un pié de página para darle información adicional al visitante, una vez terminas vas con otra sección de tu sitio, copias y pegas el código del encabezado, toda la información sobre tí o tu negocio y así repites para todas tus demás secciones y esto te funcionará perfectamente...
+
+Pero... eso de estar copiando y pegando codigo repetido no es algo que se le da muy bien a un buen desarrollador, es más imagina que tienes que hacer un cambio en el encabezado de todas tus secciones, te tomaría tiempo que puedes usar para avanzar en otras partes importantes de tu código y para esto, vienen al rescate los componentes de React, que no es más que un trozo de código (puede ser tu encabezado o tu píe de página) que se encarga de evitar tu código repetido, hacer una única función y hacerla muy bien.
+
+En React existen dos tipos de componentes: 
+
+- Componentes de clase 
+- Componentes funcionales
+
+En esta guía nos centraremos en los **componentes funcionales**  ya que son los más nuevos propuestos por React.
+
+### Componentes funcionales:
+
+Un componente funcional como lo dice su nombre **Es una función en Javascript** y se luce de la siguiente manera:
+
+### Funcion normal
+```JS
+    function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+    }
+```
+
+### Funcion de flecha
+```JS
+    const Welcome = (props) => {
+        return <h1>Hello, {props.name}</h1>;
+    }
+```
+
 ## Ciclo de vida de componentes
 
 ## Props
