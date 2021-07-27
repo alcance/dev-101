@@ -101,6 +101,37 @@ Al igual que en `xml`, si una etiqueta no tiene hijos, puede **autocerrarse**, p
 ## Componentes
 
 ## Ciclo de vida de componentes
+Un componente puede pasar por diversas etapas a lo largo de su existencia. Estas etapas se dividen en tres, que corresponden al momento en el que el componente es: montado, actualizado y desmontado.
+
+En versiones anteriores e React, estos tres ciclos se podían encontrar con las siguientes funciones:
+
+```JSX
+    componentDidMount();
+    componentDidUpdate();
+    componentWillUnmount();
+```
+
+**componentDidMount()** Es usado para hacer operaciones cuando el componente es montado o creado. Y permite llevar a cabo efectos secundarios cuando el componente se monta (Una petición a un servidor, por ejemplo)
+
+**componentDidUpdate(prevProps)** Se ejecuta cada vez que cambia el estado dentro de nuestra aplicación, también permite ejecutar operaciones con efectos secundarios.
+
+**componentWillUnmount();** Se llamará cada vez que el componente vaya a ser desmontado, es de mucha utilidad para hacer limpieza. Un caso muy útil es cuando un componente que utiliza algún `eventListener` es creado y eliminado varias veces. No queremos tener múltiples `evetListener` haciendo lo mismo o peor, cosas que ya no necesitamos. También es muy útil para cancelar operaciones asíncronas. !Evita las fugas de memoria!
+
+Los tres métodos mencionados anteriormente son para Class Componentes o componentes basados en clases. Pero, a partir de la versión 16.8 de React, contamos con los hooks, los cuales nos permiten controlar el estado de la aplicación de forma más sencilla. 
+
+Entre los hooks disponibles, el que cubre los tres métodos anteriormente es el hook de efecto `useEffect`
+
+**Montado**
+```JSX
+    useEffect(() => {
+        console.log('This will be executed when the component is created. What about calling our server?');
+        return () => {
+            console.log('This will be executed when your component is destroyed. What about cancelling asynchronous operations?');
+        }
+    }, [dependencyArray]); // Will re execute your effect every time a variable of your dependency array change
+```
+
+Más adelante, iremos a fondo sobre este hook. Hay cosas que debemos evitar o seguir para mantener las buenas prácticas.
 
 ## Props
 
