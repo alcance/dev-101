@@ -285,7 +285,7 @@ Y ahora sí, tu app seguirá funcionando aunque el padre no envie esa props.
 
 En el tema anterior hablamos sobre los hooks, y te dimos una breve introducción a useState que como te comentaba, es uno de los hooks más comunes y utilizados.
 
-Ahora vamos a ir a fondo en este tema, pero para eso antes debemos de hablar de algo muy importante y es que: 
+Ahora vamos a ir a fondo en este tema, pero para eso, antes debemos de hablar de algo muy importante y es que: 
 **existen componentes con estado y componentes sin estado.**
 
 ### **Componentes sin estado**
@@ -359,6 +359,10 @@ Para que todo lo anterior quede más claro y tenga sentido, veremos el código d
 ```
 
 Como primer punto hemos importado useState, luego lo estamos utilizando dentro del componente y notarás que hemos usado la convención ``[count, setCount]`` en donde **count** es el valor y **setCount** es la función que se encargará de actualizar el valor de **count**.
+
+Dentro del evento `onClick` del la etiqueta `<button>` estamos ejecutando la función **setCount** que se encarga de actualizar el estado con un simple ``+ 1`` para aumentar el valor en uno.
+
+Puedes usar la cantidad de useState que necesites en tu app, pero como recomendación puedes usar un objeto en la que puedas agrupar información relacionada.
 
 
 
