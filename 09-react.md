@@ -281,6 +281,108 @@ Y ahora sí, tu app seguirá funcionando aunque el padre no envie esa props.
 
 ## Estado
 
+### **¿Que es el estado?** 
+
+En el tema anterior hablamos sobre los hooks, y te dimos una breve introducción a useState que como te comentaba, es uno de los hooks más comunes y utilizados.
+
+Ahora vamos a ir a fondo en este tema, pero para eso antes debemos de hablar de algo muy importante y es que: 
+**existen componentes con estado y componentes sin estado.**
+
+### **Componentes sin estado**
+
+Los componentes sin estado o también conocidos como **stateless components** son componentes que no guardan ningún tipo de información y por esa razón no necesitan tener varaibles locales que esten disponibles en todo el componente, pero veamos como se ve un componente sin estado:
+
+#### **Componente sin estado**
+
+```JS
+const statelessComponent = ({name, age}) => {
+    return (
+        <div>
+            <h1>Welcome {name}, your age is {age}</h1>
+        </div>
+    )
+}
+```
+
+Como puedes ver este componente no hace más que retornar un mensaje de bienvenida al usuario y no es necesario tener un estado.
+
+
+### **Componentes con estado**
+
+Los componentes con estado o también conocidos como **statefull components** son los que tienen que guardar un estado de manera local (disponible en cualquier parte del componente) y aquí es donde viene useState a auyudarnos a mantener el estado, iremos viendo de la mano como usar este hook y que relación tiene con el estado.
+
+Empecemos viendo la forma de importar useState en un componente
+
+```
+import React, { useState } from 'react'  
+const [state, setstate] = useState(initialState)
+```
+
+```
+import React from 'react'  
+const [state, setstate] = React.useState(initialState)
+```
+
+La primer forma usando destructuring es la más común y la más recomendada, pero siempre es importante conocer las formas alternas.
+
+Ahora que ya sabemos como importarlo vamos a ver como se usa, en las lineas anteriores después de la importación llamamos a useState de esta forma:
+
+``const [state, setstate] = useState(initialState)``
+
+Y para hacerte sentir más tranquilo cuando trabajas con hooks debes de saber lo siguiente:
+
+**Los hooks no son más que funciones de JavasCript**
+
+y si eres observador ``useState(initialState)`` es simplemente la ejecución de una funcion, que esta enviando un valor como argumento para ser procesado, este valor puede ser de cualquier tipo (texto, número, arreglo y objeto) y ``const [state, setstate]`` es una desestructuración de arreglos en JavaScript.
+
+Como convención debes de usar el primer valor en minuscula y el segundo anteponiendo la palabra **set** y el nombre del valor iniciando con mayuscula, esto no es obligatorio puedes poner el nombre que quieras, pero es importante mantener las convenciones para que otros desarrolladores puedan entender tu código sin problemas.
+
+Para que todo lo anterior quede más claro y tenga sentido, veremos el código de un contador en el que usaremos useState y actualizaremos ese estado con un click
+
+```JS
+    import React, { useState } from 'react';
+
+    const Counter = () => {
+    const [count, setCount] = useState(0);
+
+    return (
+        <div>
+        <p>Hiciste click {count} veces</p>
+        <button onClick={() => setCount(count + 1)}>
+            Click me
+        </button>
+        </div>
+    );
+    }
+
+    export default Counter
+```
+
+Como primer punto hemos importado useState, luego lo estamos utilizando dentro del componente y notarás que hemos usado la convención ``[count, setCount]`` en donde **count** es el valor y **setCount** es la función que se encargará de actualizar el valor de **count**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## useEffect
 
 ## Reglas
