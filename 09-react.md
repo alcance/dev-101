@@ -114,8 +114,6 @@ Al igual que en `xml`, si una etiqueta no tiene hijos, puede **autocerrarse**, p
 
 ## Construir tu propio hook
 
-**¿Qué es un custom hook?**
-
 Todo el código que nosotros escribamos en React debe ser: entendible, escalable y reutilizable. Es por esto que debemos intentar que nuestros componentes sean simples y claros de leer. Y aquí es donde entran los *custom hook*.
 
 Un custom hook es una función común y corriente de JavaScript en la cual se extrae la lógica de un componente con la finalidad de hacerlo reutilizable.
