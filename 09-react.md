@@ -529,4 +529,65 @@ Se usa de la siguiente manera:
 
 ## Reglas
 
-## Construir tu propio hook.
+## Construir tu propio hook
+
+Todo el código que nosotros escribamos en React debe ser: entendible, escalable y reutilizable. Es por esto que debemos intentar que nuestros componentes sean simples y claros de leer. Y aquí es donde entran los *custom hook*.
+
+Un custom hook es una función común y corriente de JavaScript en la cual se extrae la lógica de un componente con la finalidad de hacerlo reutilizable.
+
+Por estándar, los hooks comienzan con la palabra *use* seguido de un alias a las operaciones que se realizan en él. Por ejemplo, un custom hook que haga peticiones a un servidor, podría llamarse *useFetch*.
+
+Tomemos el custom hook *useFetch* de ejemplo, supongamos que tenemos un componente que hace una petición a una api y muestra la información en pantalla; este componente puede lucir de esta forma: 
+
+```JSX
+    export const Component = () => {
+        const [state, setState] = useState();
+
+        useEffect(() => {
+            const fetchData = () => {
+                const resp = // We fetch data
+
+                setState(resp);
+            }
+        }, []);
+
+        return (
+            <div>Respose: {state}</div>
+        );
+    }
+```
+
+Podemos extraer la lógica en nuestro custom hook, el cual luciría de esta manera:
+```JSX
+    // useFetch.js
+
+    export const useFetch() {
+        const [state, setState] = useState();
+
+        useEffect(() => {
+            const fetchData = () => {
+                const resp = // We fetch data
+
+                setState(resp);
+            }
+        }, []);
+
+        return { state };
+    }
+```
+
+Y nuestro el código de nuestro componente sería mucho más fácil de leer
+
+```JSX
+    // Component.js
+
+    export const Component = () => {
+        const {state} = useFetch();
+
+        return (
+            <div>Respose: {state}</div>
+        );
+    }
+```
+
+Este es un ejemplo bastante básico, sin embargo, nuestros componentes pueden retornar tantas funciones o valores como necesitemos y lo mejor, ¡Podemos usarlos en otros componentes!
