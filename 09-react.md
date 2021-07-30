@@ -100,6 +100,64 @@ Al igual que en `xml`, si una etiqueta no tiene hijos, puede **autocerrarse**, p
 
 ## Componentes
 
+En palabras simples, un componente es una parte de tu aplicación independiente y reutilizable. 
+
+### **¿Por qué usar componentes?**
+
+Imaginemos una página web muy básica, en la que tienes una barra de navegación, esta contiene un menu que lleva a los usuarios a navegar por todo tu sitio web (Inicio, Sobre nosotros, Contacto, etc.), Inicias escribiendo tu código para la página de Inicio, escribes un encabezado, todo el contenido para darle la bienvenida al usuario y un pié de página para darle información adicional al visitante, una vez terminas vas con otra sección de tu sitio, copias y pegas el código del encabezado y del pié de página, escribes toda la información sobre tí o tu negocio y así repites para todas tus demás páginas, y sin duda, esto te funcionará perfectamente.
+
+Pero... eso de estar copiando y pegando codigo repetido no es algo que se le da muy bien a un buen desarrollador, es más, imagina que tienes que hacer un cambio en el encabezado de todas tus secciones, te tomaría tiempo y trabajo que puedes usar para avanzar en otras partes importantes de tu código, pero que si te dijera que puedes escribir o modificar tu codigo una sola vez y afectar a todas tus demás páginas? , y aquí es donde vienen al rescate los componentes de React, que no es más que un trozo de código (por ejemplo puede ser tu encabezado o tu píe de página) que se encarga de evitar tu código repetido, hacer una única función y hacerla muy bien.
+
+En React existen dos tipos de componentes: 
+
+- Componentes de clase. 
+- Componentes funcionales.
+
+En esta guía nos centraremos en los **componentes funcionales**  ya que son los más nuevos propuestos por React.
+
+### **Componentes funcionales:**
+
+Un componente funcional como lo dice su nombre **Es una función en Javascript** y luce de la siguiente manera:
+
+### **Funcion normal**
+```JS
+    function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+    }
+
+    export default Welcome
+```
+
+### **Funcion de flecha**
+```JS
+    const Welcome = (props) => {
+        return <h1>Hello, {props.name}</h1>;
+    }
+
+    export default Welcome
+```
+
+
+Hay algo **importante** que debes notar en este componente, y es que su nombre debe de iniciar con mayuscula para que React lo reconozca como componente, además es importante exportalo para poder usarlo en otro componente.
+
+También notarás que nuestro componente esta recibiendo **props** como parametro, y los **props** no son más que variables que otro componente nos esta enviando, pero esto lo veremos más a fondo en un próximo capitulo.
+
+### **Llamar a un componente desde otro**
+
+Ahora que ya tienes tu componente creado, ya puedes utilizarlo desde otro componente llamandolo de la siguiente manera:
+
+```JS
+    /* /components/Welcome es la ruta en donde se encuentra tu componente creado*/
+
+    import Welcome from '/components/Welcome'
+
+    <Welcome />
+```
+
+Listo de esa forma ya puedes usar tu componente Welcome en donde quieras, y lo mejor de todo es que si haces un cambio en el componente se verá reflejado en todos los lugares en donde lo estes usando.
+
+Recuerda que un componente no tiene porque ser tan simple como el ejemplo, puedes agregar toda la lógica que necesites dentro de el, al igual que todo el contenido en JSX que desees.
+
 ## Ciclo de vida de componentes
 
 ## Props
