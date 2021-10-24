@@ -10,6 +10,10 @@ Actualmente se esta trabajando en una [Guía de Contribución](contribucion.md) 
 
 \(c\) 2019 **Iván E. Martínez Agüero**
 
+## Authors
+
+[Iván E. Martínez Agüero](https://github.com/alcance)
+[Kevin I. Rodriguez García](https://github.com/KevinIsYi)
   
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
